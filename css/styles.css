@@ -633,6 +633,8 @@ border-width: 0px;
 
   background: rgba(0, 0, 0, 0.2);
 
+  opacity: 1;
+  transition: opacity var(--time-animation) var(--time-function);
 }
 
 .backdrope.is-hidden {
@@ -695,6 +697,7 @@ textarea {
 }
 
 .button-close:hover,
+.button-close:focus,
 .form-input:focus + .img-form,
 textarea:focus  + .img-form
  {
@@ -749,9 +752,11 @@ textarea:focus
 
   color: black;
 }
+
 .img-close {
   fill:currentColor; 
 }
+
 .img-color { 
   display: flex;
   justify-content: center;
@@ -763,6 +768,7 @@ textarea:focus
 .form-link {
   color: #2196F3;
 }
+
 .img-form{
   color: var(--title-text-color);
   
@@ -781,12 +787,12 @@ textarea:focus
   -webkit-appearance: none;
 
   position: absolute;
-
 }
 
 .checkbox-label {
   display: inline-block;
 }
+
 .checkbox-label::before{
   content: '';
   display: inline-block;
