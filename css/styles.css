@@ -622,7 +622,7 @@ border-width: 0px;
 .work-list .elem {
   padding: 20px;
 }
-
+/* modal window */
 .backdrope {
   position: fixed;
 
@@ -775,5 +775,32 @@ textarea:focus
   height: 18px;
 }
 
+.checkbox {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
+  position: absolute;
 
+}
+
+.checkbox-label {
+  display: inline-block;
+}
+.checkbox-label::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.checkbox:checked + .checkbox-label::before{
+  background-color: var(--accent-color);
+  background-image: url('../images/icon_check.svg');
+  border-width: 0;
+  /* background-size: contain;
+  background-origin: border-box; */
+}
