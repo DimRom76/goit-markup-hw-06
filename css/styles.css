@@ -16,7 +16,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 
-  width: 1600px;
+  /* max-width: 1600px; */
 }
 
 button {
@@ -84,7 +84,7 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /*logo*/
@@ -408,7 +408,8 @@ border-width: 0px;
     color var(--time-animation) var(--time-function);
 }
 
-.client-list .item:hover {
+.client-list .item:hover,
+.client-list .item:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -420,8 +421,13 @@ border-width: 0px;
 /* footer   */
 .footer-main {
   background: #2f303a;
+
   height: 252px;
   padding: 60px;
+  
+  /* max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .container.footer {
@@ -464,6 +470,7 @@ border-width: 0px;
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
+
 
 .footer .logo-studio {
   color: var(--primary-white-color);
@@ -617,12 +624,21 @@ border-width: 0px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
+
 }
 
 .work-list .elem {
   padding: 20px;
+  text-decoration: none;
+}
+
+.work-list .link{
+
+  text-decoration: none;
+
 }
 /* modal window */
+
 .backdrope {
   position: fixed;
 
