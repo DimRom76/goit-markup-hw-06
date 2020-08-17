@@ -554,7 +554,7 @@ border-width: 0px;
 
 .work-list .element {
   background-color: var(--primary-white-color);
-  border: 6px solid #eeeeee;
+  border: 1px solid #eeeeee;
 
   box-shadow: none;
 
